@@ -11,6 +11,9 @@ public class PTra02_08 {
 		int num = 20;
 		int calc = 5;
 		String name = "鈴木";
+		System.out.print(name + "さんは,");System.out.print(num+calc+"歳になりました");
+
+
 
 		// ★ 変数num, calc, nameを連結して「鈴木さんは、25歳になりました」を出力してください
 
