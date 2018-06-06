@@ -8,18 +8,18 @@ package practice02;
 
 public class PTra02_06 {
 	public static void main(String[] args) {
-		int x = 10;
-		int y = 50;
-
-		System.out.println("x:" + x);
-		System.out.println("y:" + y);
-
+		int x =10;
+		int y =50;
 		// ★ 変数 x, y の値をリテラルの数字を使わずに入れ替えてください
 		// ※プログラムは何行書いても良いです
-
-
+		int a = y;
+		y=x;
+		x=a;
 		// ここから下は修正しないでください
 		System.out.println("x:" + x);	// 「x:50」が出力される
 		System.out.println("y:" + y);	// 「y:10」が出力される
 	}
 }
+
+
+
