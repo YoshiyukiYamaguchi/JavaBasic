@@ -9,10 +9,10 @@ package practice01;
 public class PTra01_04 {
 	public static void main(String[] args) {
 
-		String f;
+		Float f;
 
 
-		f = "3.14";
+		f = 3.14f;
 
 
 		System.out.println(f);
