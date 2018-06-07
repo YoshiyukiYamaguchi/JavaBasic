@@ -12,7 +12,7 @@ public class PTra03_04 {
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
-		System.out.println("西暦を入力してください");
+		System.out.println("");
 
 		// コマンドプロンプトで入力した文字列が変数lineに代入されます
 		String line = scanner.nextLine();
@@ -29,10 +29,19 @@ public class PTra03_04 {
 		 * ● 西暦の年が 4 で割り切れる年は原則として「～年はうるう年です。」
 		 * ● ただし、100で割り切れたら「～年はうるう年ではありません。」
 		 * ● しかし、400で割り切れるなら「～年はうるう年です。」と表示する
-		 *
+
 		 * ※ プログラムは何行書いても良いです
 		 */
+		if(num%400==0) {
+			System.out.print(num+"年はうるう年です。");
+		}else if (num%100==0) {
+			System.out.print(num+"年はうるう年ではありません。");
+		}else if(num%4==0) {
+			System.out.print(num+"年はうるう年です。");
+        }else {
+			System.out.print(num+"年はうるう年ではありません。");
 
 
-	}
-}
+
+	}}}
+
