@@ -26,15 +26,27 @@ public class PTra03_08 {
 		int money = 1000;	// 所持金
 
 		//---------------------ここから本題-----------------------
-		/*
+		/*1,晴れ2.曇り3.雨
 		 * ★ 以下の仕様に沿ってプログラムを完成させてください
 		 *
 		 * ●入力された値に対応した商品を購入
 		 * ●所持金から、対応した商品の値段分を引く
 		 * ●最後に所持金を表示してプログラム終了
 		 *
-		 * ※ プログラムは何行書いても良いです
+		 * ※ プログラムは何行書いても良いです*
 		 */
+		if (num==1) {
+		num= money-150;
+		System.out.println("オレンジジュースを購入");
+		System.out.println("残りの所持金"+num+"円");
+		}else if(num==2) {
+		num=money-160;
+		System.out.println("リンゴジュースを購入");
+		System.out.println("残りの所持金"+ num+"円");
+		}else if(num==3) {
+			num=money-200;
+		System.out.println("コーヒーを購入");
+		System.out.println("残りの所持金"+num+"円");
 
 	}
-}
+}}
