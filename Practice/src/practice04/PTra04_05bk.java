@@ -6,7 +6,7 @@ package practice04;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
-public class PTra04_05 {
+public class PTra04_05bk {
 	public static void main(String[] args) {
 		// 入力型プログラムです。
 		// 下記の命令は、入力型プログラムで必要な記述になります。
@@ -44,33 +44,36 @@ public class PTra04_05 {
 			 *
 			 * ※ プログラムは何行書いても良いです
 			 */
-			if (cpuHand == 0) {
-				System.out.println("グー！");
-
-				if(myHand == 2) {
-					System.out.println("勝ち！！！");
-					winFlg = true;
-				}
 
 
+			if (cpuHand == 0 && myHand ==0) {
+				System.out.println("グー！！引き分け");
+			} else if (cpuHand == 0 && myHand ==1 ) {
+				System.out.println("グー！！負け");
+			} else if (cpuHand==0&&myHand==2) {
+				System.out.println("グー！！勝ち");
+				winFlg=true;
+			}
 
-			} else if (cpuHand == 1) {
-				System.out.println("チョキ！！");
+			if (cpuHand == 1 && myHand ==1) {
+				System.out.println("チョキ！！引き分け");
+			} else if (cpuHand == 1 && myHand ==2 ) {
+				System.out.println("チョキ！！負け");
+			} else if (cpuHand==1&&myHand==0) {
+				System.out.println("チョキ！！勝ち"+!winFlg);
+				winFlg=true;
+			}
 
-				if(myHand == 0) {
-					System.out.println("勝ち！！！");
-					winFlg = true;
-				}
+			if (cpuHand == 2 && myHand ==2) {
+				System.out.println("パー！！引き分け");
+			} else if (cpuHand == 2 && myHand ==0 ) {
+				System.out.println("パー！！負け");
+			} else if (cpuHand==2&&myHand==1) {
+				System.out.println("パー！！勝ち"+true);
+				winFlg=true;
+			}
 
 
-
-			} else {
-				System.out.println("パー！！");
-
-				if(myHand == 1) {
-					System.out.println("勝ち！！！");
-					winFlg = true;
-				}
 
 
 
@@ -78,4 +81,3 @@ public class PTra04_05 {
 
 		}
 	}
-}
