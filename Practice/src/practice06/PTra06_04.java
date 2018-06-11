@@ -15,6 +15,13 @@ public class PTra06_04 {
 		 * -----------------------------------
 		 * ■■■■■
 		 */
+		for (int i =0;i<5;i++)	{
+			String a = String.valueOf(i);
+			System.out.print(a="■");
+		
 
+	
+		
+		
 	}
-}
+	}}
