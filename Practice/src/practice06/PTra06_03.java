@@ -12,7 +12,7 @@ public class PTra06_03 {
 		
 		for (int i =0;i<5;i++)	{
 			String a = String.valueOf(i);
-			System.out.println(a="■");
+			System.out.print(a="■");
 		
 
 	
