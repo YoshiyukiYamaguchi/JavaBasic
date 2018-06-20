@@ -13,24 +13,22 @@ public class PTra06_06 {
 		/*
 		 * 出力結果例
 		 *  j----------------------------------
-		 i 0□□□□□  12345
-		 * 1■□□□□  67891
-		 * 2■■□□□  12345
-		 * 3■■■□□  67891
-		 * 4■■■■□  12345
+		 i 0□□□□□
+		 * 1■□□□□
+		 * 2■■□□□
+		 * 3■■■□□
+		 * 4■■■■□  		 *
 		 */
 		for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-             if (i==0) {
-            	 System.out.print("□");
-             }else if(i<=1&&j<=1)  {
-            	 System.out.print("■");
-             }
-
+            	if (j < i) {
+            		System.out.print("■");
+            	}else {
+            		System.out.print("□");
+            	}
 		}
         	System.out.println();
 
 }
 	}}
-
 
