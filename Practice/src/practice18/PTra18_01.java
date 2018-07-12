@@ -5,7 +5,6 @@
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 package practice18;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -20,6 +19,7 @@ public class PTra18_01 {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
                 // ★ 1行ごとにArrayListに格納してください
+               array.add(line);
 
             }
         } catch (FileNotFoundException e) {
@@ -28,6 +28,9 @@ public class PTra18_01 {
 
 		// ★ ArrayListに格納された値を全て表示してください
 		// ※ できれば拡張for文を使いましょう
-
+        for (String A : array) {
+        	
+           	System.out.println(A);
+        }
 	}
 }
